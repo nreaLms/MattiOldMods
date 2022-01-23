@@ -1,0 +1,10 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/d3_grandespe76/valiant76_lod0";
+	ColorMap			"models/vehicles/d3_grandespe76/valiant76_lod0_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.15;
+	nocull		1;
+}; 

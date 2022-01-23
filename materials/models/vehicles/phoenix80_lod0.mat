@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/d3_redlineV8_80/phoenix80_lod0";
+	//DamageTexture		"models/vehicles/d3_redlineV8_80/miamicab_dam";
+	ColorMap			"models/vehicles/d3_redlineV8_80/phoenix80_lod0_col";
+	BaseTextureSpecularAlpha 	0;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.15;
+	nocull		1;
+}; 

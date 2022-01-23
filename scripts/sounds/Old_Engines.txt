@@ -1,0 +1,175 @@
+//----------------------------------------------------
+
+"imperial61.engine"
+{
+	wave 	"engines/imperial61_high.wav";
+
+	pitch		0.48;
+	volume		1.8;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"imperial61.engine_low"
+{
+	wave 	"engines/imperial61_low.wav";
+
+	pitch		0.48;
+	volume		1.1;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"imperial61.engine_idle"
+{
+	wave 	"engines/imperial61_idle.wav";
+
+	pitch		1.0;
+	volume		1.1;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"valiant76.engine"
+{
+	wave 	"engines/valiant76_high.wav";
+
+	pitch		0.48;
+	volume		1.8;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"valiant76.engine_low"
+{
+	wave 	"engines/valiant76_low.wav";
+
+	pitch		0.48;
+	volume		1.1;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"valiant76.engine_idle"
+{
+	wave 	"engines/valiant76_idle.wav";
+
+	pitch		1.0;
+	volume		1.1;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"splitter69.engine"
+{
+	wave 	"engines/splitter69_high.wav";
+
+	pitch		0.60;
+	volume		1.0;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"splitter69.engine_low"
+{
+	wave 	"engines/splitter69_low.wav";
+
+	pitch		0.60;
+	volume		0.70;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"splitter69.engine_idle"
+{
+	wave 	"engines/splitter69_idle.wav";
+
+	pitch		1.0;
+	volume		1.1;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"d3dash81.engine"
+{
+	wave 	"engines/d3dash81_high.wav";
+
+	pitch		0.48;
+	volume		1.5;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"d3dash81.engine_low"
+{
+	wave 	"engines/d3dash81_low.wav";
+
+	pitch		0.48;
+	volume		0.8;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"d3dash81.engine_idle"
+{
+	wave 	"engines/d3dash81_idle.wav";
+
+	pitch		1.0;
+	volume		0.8;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"tokyocar.engine34"
+{
+	wave 	"engines/engine34_high.wav";
+
+	pitch		0.48;
+	volume		3.0;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"tokyocar.engine34_low"
+{
+	wave 	"engines/engine34_low.wav";
+
+	pitch		0.32;
+	volume		1.3;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"tokyocar.engine34_idle"
+{
+	wave 	"engines/engine34_idle.wav";
+
+	pitch		0.64;
+	volume		1.3;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"miami.weoweo"
+{
+	rndwave
+	{
+		wave 	"weoweo/miami_slow.wav";
+		wave 	"weoweo/miami_fast.wav";
+	}
+
+	volume		2.5;
+	distance	2.5;
+	maxdistance	150;
+	channel		CHAN_SIGNAL;
+};

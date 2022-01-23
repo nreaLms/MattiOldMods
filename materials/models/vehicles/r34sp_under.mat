@@ -1,0 +1,12 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/r34sp_under";
+	//DamageTexture			"models/vehicles/r34sp_base_dam";
+	//ColorMap			"models/vehicles/r34sp_base_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.12;
+	alphatest	0;
+	nocull		1;
+}; 

@@ -1,0 +1,6 @@
+BaseUnlit
+{
+	BaseTexture "ui/vehicles/d2_schutze400_82"
+	address "clamp";
+	translucent 1;
+}

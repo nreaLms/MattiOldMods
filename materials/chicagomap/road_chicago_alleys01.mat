@@ -1,0 +1,6 @@
+"Base" 
+{ 
+	"basetexture" "chicagomap/road_chicago_alleys01";
+	cubemap		"$env_cubemap";
+	rotatable	"1";
+}; 

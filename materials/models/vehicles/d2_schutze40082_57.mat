@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/psx_schutze400/d2_schutze40082_57";
+	DamageTexture		"models/vehicles/psx_schutze400/d2_schutze40082_57_dam";
+	ColorMap			"models/vehicles/psx_schutze400/d2_schutze40082_57_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.35;
+	nocull		1;
+}; 

@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/gtavc_ltd/vcciv83_body";
+	DamageTexture		"models/vehicles/gtavc_ltd/vcciv83_body_dam";
+	ColorMap			"models/vehicles/gtavc_ltd/vcciv83_body_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.15;
+	nocull		0;
+}; 

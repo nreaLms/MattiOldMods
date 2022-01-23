@@ -1,0 +1,181 @@
+name		"'73 Cutter XS";
+
+cleanmodel		"models/vehicles/cutterxs.egf";
+damagedmodel	"models/vehicles/cutterxs_dam.egf";
+wheelmodel		"models/vehicles/wheelmuscle.egf";
+wheelBodyGroup	"wheel2d";
+
+sounds
+{
+	engine		"splitter69.engine";
+	engine_low	"splitter69.engine_low";
+	engine_idle	"splitter69.engine_idle";
+
+	horn 		"car.horn4";
+	// use single engine sound
+	//engine_off	"sounds/engines/engine2_off.wav"
+};
+
+camera_height 	1.1;
+camera_distance 6.4;
+
+camera_height_in 	0.26;
+camera_distance_in	1.6;
+camera_side_in		0.39;
+
+visuals
+{
+	// name	type position split dist
+	headlights 	1 0.61 0.04 2.21 0.09;
+	brakelights 	1 0.62 -0.05 -2.55 0.06;
+
+	frontdimlights	0.62 -0.17 2.26 0.1;
+	backdimlights	0.40 -0.05 -2.55 0.09;
+
+	// position
+	backlights 	0.46 -0.05 -2.56 0.09;
+
+	engine 0.0 0.1 2.2;
+	driver -0.36 0.18 -0.2;
+};
+
+hingePoints
+{
+	front 0.0 -0.25 2.25;
+	back 0.0 -0.25 -2.55;
+}
+
+useBodyColor 1;
+
+colors
+{
+	//name		r	g	b	reflectivity
+	"Default" 	0.54 	0.48 	0.28	1.0;	// sandybrown
+	
+	"Yellow w/ Black Stripes"
+	{
+		1	0.6	0.4	0.0	1.0;	// yellow
+		2	0.02 	0.02 	0.02	1.0;	// black
+	};
+
+	"Black w/ Gold Stripes"
+	{
+		1	0.02 	0.02 	0.02	1.0;	// black
+		2	0.47	0.36	0.14	1.0;	// gold
+	};
+
+	"Red w/ Black Stripes"
+	{
+		1	0.3	0.04	0.04	1.0;	// red
+		2	0.02 	0.02 	0.02	1.0;	// black
+	};
+
+	"Blue w/ White Stripes"
+	{
+		1	0.01	0.01	0.15	1.0;	// blue
+		2	0.7 	0.7 	0.7	1.0;	// white
+	};
+	
+	"Dark Gray"		0.22 	0.22 	0.23	1.0;	// darkgray
+	"Gray"		0.5 	0.5 	0.5	1.0;	// gray
+	"Caramel"		0.24	0.18	0.07	1.0;	// caramel
+	"Red"		0.15	0.01	0.01	1.0;	// red
+	"Blue"		0.01	0.01	0.15	1.0;	// blue
+	
+};
+
+bodysize	0.8 0.46 2.35;
+center 		0 0.0 0.0;
+
+gravitycenter	0.0 -0.08 0.0;
+mass 		3200;
+antiroll	0.25;
+
+gears
+	-1.85
+	1.8
+	1.1
+	0.72
+	0.54;
+
+
+differential 		25.0;
+transmissionrate	1.1;
+torquemultipler		1.1;
+
+maxspeed		164;
+
+suspensionLift		0.01;
+	
+wheels
+{
+	// front wheels
+	wheel
+	{
+		SuspensionTop			-0.69 -0.10 1.32;
+		SuspensionBottom		-0.79 -0.66 1.32;
+		SuspensionSpringConstant	54000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.32;
+		Width			0.24;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	wheel
+	{
+		SuspensionTop			0.69 -0.10 1.32;
+		SuspensionBottom		0.79 -0.66 1.32;
+		SuspensionSpringConstant	54000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.32;
+		Width			0.24;
+
+		BrakeTorque		12000.0;
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	// back wheels
+	wheel
+	{
+		SuspensionTop			0.70 -0.06 -1.32;
+		SuspensionBottom		0.80 -0.66 -1.32;
+		SuspensionSpringConstant	54000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.32;
+		Width			0.24;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+	
+	wheel
+	{
+		SuspensionTop			-0.70 -0.06 -1.32;
+		SuspensionBottom		-0.80 -0.66 -1.32;
+		SuspensionSpringConstant	54000.0;
+		SuspensionDampingConstant	3000;
+		Radius 			0.32;
+		Width			0.24;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+};

@@ -1,0 +1,6 @@
+BaseUnlit
+{
+	BaseTexture "ui/vehicles/d3_patriarchtycoon81"
+	address "clamp";
+	translucent 1;
+}

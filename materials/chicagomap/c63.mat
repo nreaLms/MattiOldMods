@@ -1,0 +1,8 @@
+"Base" 
+{ 
+	"basetexture" "chicagomap/c63";
+	//NightLight  "chicagomap/c63_NL";
+	cubemap		"$env_cubemap";
+	alphatest	"1";
+	nocull	"1";
+}; 

@@ -1,0 +1,6 @@
+BaseUnlit
+{
+	BaseTexture "ui/vehicles/d3_eltoro"
+	address "clamp";
+	translucent 1;
+}

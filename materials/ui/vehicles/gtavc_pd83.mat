@@ -1,0 +1,6 @@
+BaseUnlit
+{
+	BaseTexture "ui/vehicles/gtavc_pd83"
+	address "clamp";
+	translucent 1;
+}

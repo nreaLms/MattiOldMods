@@ -1,0 +1,38 @@
+///////////////////////////////////////////////////
+// TRAFFIC LIGHTS
+///////////////////////////////////////////////////
+
+//TRAFFICLIGHTS----------------------------
+//TRAFFICLIGHTS----------------------------
+//TRAFFICLIGHTS----------------------------
+//TRAFFICLIGHTS----------------------------
+//TRAFFICLIGHTS----------------------------
+
+trafficlight "RioTrafficLightSimple"
+{
+	model	"models/riobjs/RioTrafficLightSimple.egf";
+
+	// trafficlight x y z 			type	direction
+	trafficlight 0.16 7.30f -5.82f 		0 	0;
+	trafficlight 0.16 6.74f -5.82f 		1 	0;
+	trafficlight 0.16 6.16f -5.82f 		2 	0;
+}
+
+//ROADLIGHTS-------------------------------
+//ROADLIGHTS-------------------------------
+//ROADLIGHTS-------------------------------
+//ROADLIGHTS-------------------------------
+//ROADLIGHTS-------------------------------
+
+static "RioRoadLight01"
+{
+	model	"models/riobjs/RioRoadLight01.egf";
+
+	// light x y z		rad	r g b intensity
+	// glow x y z		scale	r g b intensity spriteType
+
+	light 0 4 5 		12 	0.56 0.48 0.24 	0.48;
+
+	glow  0 11.84 3.82 	12 	0.64 0.56 0.36 	0.25 3;
+	glow  0 11.84 3.82 	4 	0.64 0.56 0.36 	1.2 3;
+}

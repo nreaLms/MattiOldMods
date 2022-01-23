@@ -1,0 +1,8 @@
+"Base" 
+{ 
+	"basetexture" 	"beton/riobeton_curb_c";
+	cubemap		"$env_cubemap";
+	WetScale	0.9;
+	alphatest 1;
+	rotatable	"1";
+}; 

@@ -1,0 +1,5 @@
+"Skinned" 
+{ 
+	"basetexture" "models/riobjs/4";
+	cubemap		"$env_cubemap";
+}; 

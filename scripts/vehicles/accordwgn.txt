@@ -1,0 +1,170 @@
+name		"Accord Wagon EX";
+
+cleanmodel	"models/vehicles/accordwgn.egf";
+damagedmodel	"models/vehicles/accordwgn_dam.egf";
+
+//		damaged 	hubcapped 	hubcap
+wheelBodyGroup	"wheel1" 	"wheel1_h1" 	"hubcap1";
+
+sounds
+{
+	engine		"car.engine5";
+	engine_low	"car.engine5_low";
+	engine_idle	"defaultcar.engine_idle";
+
+	horn 		"car.horn9";
+	// use single engine sound
+	//engine_off	"sounds/engines/engine2_off.wav"
+};
+
+camera_height 	1.2;
+camera_distance 6.2;
+
+camera_height_in 	0.25;
+camera_distance_in	1.5;
+camera_side_in		0.15;
+
+visuals
+{
+	// name	type position split dist
+	headlights 	1 0.57 0.0 2.18 0.10;
+	brakelights 	0 0.70 0.08 -2.16 0.06;
+
+	frontdimlights	0.82 0.0 2.01 0.1;
+	backdimlights	0.80 0.11 -2.06 0.06;
+
+	// position
+	backlights 0.63 0.10 -2.16 0.09;
+
+	engine 0.0 0.1 2.15;
+	exhaust 0.4 -0.35 -2.12 2;
+
+	driver -0.38 0.1 0.3;
+};
+
+useBodyColor 1;
+
+colors
+{
+	//name		r	g	b	reflectivity
+	default
+	{
+		1	0.65 	0.65 	0.65	1.0;
+		2	0.1 	0.1 	0.1	0.5;
+	};
+
+	color1 		
+	{
+		1	0.96 	0.96 	0.96	1.0;
+		2	0.35 	0.18 	0.15	0.5;
+	};
+
+	color2 		0.35 	0.18 	0.15	1.0;
+	//color3		0.21 	0.18 	0.3	1.0;
+	color4 		50 	80 	39	255;
+	color5 		179 	53 	8	255;
+	color6		0.253	0.108	0.158	0.8;	// Bordeau
+};
+
+bodysize	0.84 0.48 2.35;
+center 		0 0.15 0.0;
+
+gravitycenter	0.0 -0.15 0.1;
+mass 		2500;
+antiroll	0.18;
+
+gears
+	-2.85
+	2.736
+	1.483
+	1.026
+	0.800	// 4th without tcc
+	0.674;	// 4th with tcc
+
+
+differential 		20.0;
+transmissionrate	1.0;
+torquemultipler		0.7;
+shiftAccelFactor	0.7;
+
+maxspeed		200;
+
+suspensionLift		0.0;
+	
+wheels
+{
+	// front wheels
+	wheel
+	{
+		SuspensionTop			-0.76 0.02 1.44;
+		SuspensionBottom		-0.76 -0.64 1.48;
+		SuspensionSpringConstant	51000.0;
+		SuspensionDampingConstant	4200;
+
+		Radius 			0.31;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			0.7;
+		Drive			1;
+		Handbrake		0;
+	};
+
+	wheel
+	{
+		SuspensionTop			0.76 0.02 1.44;
+		SuspensionBottom		0.76 -0.64 1.48;
+		SuspensionSpringConstant	51000.0;
+		SuspensionDampingConstant	4200;
+
+
+		Radius 			0.31;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			0.7;
+		Drive			1;
+		Handbrake		0;
+	};
+
+	// back wheels
+	wheel
+	{
+		SuspensionTop			0.76 0.02 -1.24;
+		SuspensionBottom		0.76 -0.62 -1.28;
+		SuspensionSpringConstant	51000.0;
+		SuspensionDampingConstant	4200;
+
+
+		Radius 			0.31;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			0;
+		Handbrake		1;
+	};
+
+	
+	wheel
+	{
+		SuspensionTop			-0.76 0.02 -1.24;
+		SuspensionBottom		-0.76 -0.62 -1.28;
+		SuspensionSpringConstant	51000.0;
+		SuspensionDampingConstant	4200;
+
+
+		Radius 			0.31;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			0;
+		Handbrake		1;
+	};
+
+};

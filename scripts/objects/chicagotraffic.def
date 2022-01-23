@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////
+// TRAFFIC LIGHTS
+///////////////////////////////////////////////////
+
+//TRAFFICLIGHTS----------------------------
+//TRAFFICLIGHTS----------------------------
+//TRAFFICLIGHTS----------------------------
+//TRAFFICLIGHTS----------------------------
+//TRAFFICLIGHTS----------------------------
+
+//ROADLIGHTS-------------------------------
+//ROADLIGHTS-------------------------------
+//ROADLIGHTS-------------------------------
+//ROADLIGHTS-------------------------------
+//ROADLIGHTS-------------------------------
+
+static "ChicagoRoadLight01_Simple"
+{
+	model	"models/chicagoobjs/ChicagoRoadLight01_simple.egf";
+
+	// light x y z		rad	r g b intensity
+	// glow x y z		scale	r g b intensity spriteType
+
+	light 4 4 0 		12 	0.56 0.48 0.24 	0.48;
+
+//light1
+	glow  2.84 8.12 0.0 	10 	0.64 0.56 0.36 	0.25 3;
+	glow  2.84 8.12 0.0 	1.75 	0.64 0.56 0.36 	1.2 3;
+}
+
+static "ChicagoRoadLight01_Double"
+{
+	model	"models/chicagoobjs/ChicagoRoadLight01_double.egf";
+
+	// light x y z		rad	r g b intensity
+	// glow x y z		scale	r g b intensity spriteType
+
+	light 0 4 0 		20 	0.56 0.48 0.24 	0.48;
+
+//light1
+	glow  0 8.12 2.84 	10 	0.64 0.56 0.36 	0.25 3;
+	glow  0 8.12 2.84 	1.75 	0.64 0.56 0.36 	1.2 3;
+	
+//light2
+	glow  0 8.12 -2.84 	10 	0.64 0.56 0.36 	0.25 3;
+	glow  0 8.12 -2.84 	1.75 	0.64 0.56 0.36 	1.2 3;
+}

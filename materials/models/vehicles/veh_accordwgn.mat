@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/drvsyn_accordwgn/veh_accordwgn";
+	DamageTexture		"models/vehicles/drvsyn_accordwgn/veh_accordwgn_dam";
+	ColorMap			"models/vehicles/drvsyn_accordwgn/veh_accordwgn_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.65;
+	nocull		0;
+}; 

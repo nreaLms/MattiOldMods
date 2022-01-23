@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/veh_challengerxs";
+	ColorMap			"models/vehicles/veh_challengerxs_col";
+	DamageTexture		"models/vehicles/veh_challengerxs_dam";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.65;
+	nocull		1;
+}; 

@@ -1,0 +1,6 @@
+BaseUnlit
+{
+	BaseTexture "ui/vehicles/gta3_yardielobo"
+	address "clamp";
+	translucent 1;
+}

@@ -1,0 +1,7 @@
+"Base" 
+{ 
+	"basetexture" "riomap/30";
+	cubemap		"$env_cubemap";
+	alphatest	"1";
+	nocull	"1";
+}; 

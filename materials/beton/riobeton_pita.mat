@@ -1,0 +1,7 @@
+"Base" 
+{ 
+	"basetexture" 	"beton/riobeton_pita";
+	cubemap		"$env_cubemap";
+	WetScale	0.9;
+	alphatest 1;
+}; 

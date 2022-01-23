@@ -1,0 +1,6 @@
+BaseUnlit
+{
+	BaseTexture "ui/vehicles/cop_regis_malt"
+	address "clamp";
+	translucent 1;
+}

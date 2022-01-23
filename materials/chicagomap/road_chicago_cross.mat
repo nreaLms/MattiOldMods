@@ -1,0 +1,6 @@
+"Base" 
+{ 
+	"basetexture" "chicagomap/road_chicago_cross";
+	cubemap		"$env_cubemap";
+	rotatable	"1";
+}; 

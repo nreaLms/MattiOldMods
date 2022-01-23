@@ -1,0 +1,10 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/drvsyn_copregis_malt/veh_cop_regis_malt";
+	DamageTexture			"models/vehicles/drvsyn_copregis_malt/veh_cop_regis_malt_dam";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.65;
+	nocull		1;
+}; 

@@ -1,0 +1,6 @@
+BaseUnlit
+{
+	BaseTexture "ui/vehicles/retaliatorse72"
+	address "clamp";
+	translucent 1;
+}

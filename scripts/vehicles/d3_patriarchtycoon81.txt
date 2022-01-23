@@ -1,0 +1,182 @@
+name		"'81 Victory";
+
+cleanmodel	"models/vehicles/victory81.egf";
+damagedmodel	"models/vehicles/victory81_dam.egf";	// _damage.egf
+
+//		damaged 	hubcapped 	hubcap
+wheelmodel	"models/vehicles/wheelsedan.egf";
+wheelBodyGroup	"wheel1d";
+
+sounds
+{
+	engine		"valiant76.engine";
+	engine_low	"valiant76.engine_low";
+	engine_idle	"valiant76.engine_idle";
+
+	horn 		"car.horn2";
+	// use single engine sound
+	//engine_off	"sounds/engines/engine2_off.wav"
+};
+
+camera_height 	1.2;
+camera_distance 6.3;
+
+camera_height_in 	0.25;
+camera_distance_in	1.5;
+camera_side_in		0.15;
+
+visuals
+{
+	// name	type position split dist
+	headlights 	1 0.54 0.06 2.22 0.09;
+	brakelights 	1 0.42 0.04 -2.32 0.07;
+
+	frontdimlights	0.69 -0.10 2.22 0.08;
+	backdimlights	0.63 -0.02 -2.32 0.07;
+
+	// position
+	backlights 0.42 -0.02 -2.32 0.09;
+
+	engine 0.0 0.1 2.1;
+	exhaust 0.38 -0.32 -2.2 2 1;
+
+	driver -0.35 0.1 0.2;
+
+	siren_lights 5 0.4 0.66 -0.32 0.11;
+};
+
+useBodyColor 1;
+
+colors
+{
+	//name		r	g	b	reflectivity
+	default
+	{
+		1	0.6		0.1		0.2	1.0;		// wine
+		2	0.90 	0.90 	0.90	0.6;	// white
+	};
+
+	green
+	{
+		1	0.02	0.01	0.36	1.0;	// blue
+		2	0.90 	0.90 	0.90	0.6;	// white
+	};
+
+	blue
+	{
+		1	0.06	0.12	0.06	1.0;	// green
+		2	0.90 	0.90 	0.90	0.6;	// white
+	};
+
+	black
+	{
+		1	0.24	0.48	0.32	1.0;	// black
+		2	0.90 	0.90 	0.90	0.6;	// white
+	};
+
+	grey
+	{
+		1	0.80	0.80	0.80	0.6;	// grey
+		2	0.90 	0.90 	0.90	0.6;	// white
+	};
+};
+
+bodysize	0.78 0.44 1.84;
+center 		0 0.0 -0.1;
+
+gravitycenter	0.0 -0.1 0.04;
+mass 		3000;
+antiroll	0.32;
+
+gears
+	-1.85
+	2.0
+	1.2
+	0.79
+	0.59;
+
+
+differential 		25.0;
+transmissionrate	1.0;
+torquemultipler		0.96;
+
+maxspeed		160;
+
+suspensionLift		0.0;
+
+steerspeed		1.0;
+	
+wheels
+{
+	// front wheels
+	wheel
+	{
+		SuspensionTop			-0.68 -0.05 1.42;
+		SuspensionBottom		-0.74 -0.76 1.46;
+		SuspensionSpringConstant	50000.0;
+		SuspensionDampingConstant	3500;
+
+		Radius 			0.31;
+		Width			0.22;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	wheel
+	{
+		SuspensionTop			0.68 -0.05 1.42;
+		SuspensionBottom		0.74 -0.76 1.46;
+		SuspensionSpringConstant	50000.0;
+		SuspensionDampingConstant	3500;
+
+		Radius 			0.31;
+		Width			0.22;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	// back wheels
+	wheel
+	{
+		SuspensionTop			0.68 -0.05 -1.34;
+		SuspensionBottom		0.74 -0.76 -1.38;
+		SuspensionSpringConstant	50000.0;
+		SuspensionDampingConstant	3500;
+
+		Radius 			0.31;
+		Width			0.22;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+	
+	wheel
+	{
+		SuspensionTop			-0.68 -0.05 -1.34;
+		SuspensionBottom		-0.74 -0.76 -1.38;
+		SuspensionSpringConstant	50000.0;
+		SuspensionDampingConstant	3500;
+
+		Radius 			0.31;
+		Width			0.22;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+};

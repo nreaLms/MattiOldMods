@@ -1,0 +1,9 @@
+"Skinned"
+{ 
+	BaseTexture			"models/vehicles/d2tiretex";
+	BaseTextureSpecularAlpha 	0;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.15;
+	nocull		1;
+}; 

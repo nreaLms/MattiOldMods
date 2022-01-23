@@ -1,0 +1,178 @@
+name		"'69 Bruiser";
+
+cleanmodel	"models/vehicles/splitter69.egf";
+damagedmodel	"models/vehicles/splitter69_dam.egf";	// _damage.egf
+
+//		damaged 	hubcapped 	hubcap
+wheelmodel	"models/vehicles/dr3wheelmuscle.egf";
+wheelBodyGroup	"dr3muswheel2";
+
+sounds
+{
+	engine		"splitter69.engine";
+	engine_low	"splitter69.engine_low";
+	engine_idle	"splitter69.engine_idle";
+
+	horn 		"car.horn8";
+	// use single engine sound
+	//engine_off	"sounds/engines/engine2_off.wav"
+};
+
+camera_height 	1.1;
+camera_distance 6.2;
+
+camera_height_in 	0.25;
+camera_distance_in	1.5;
+camera_side_in		0.15;
+
+visuals
+{
+	// name	type position split dist
+	headlights 	1 0.60 0.18 2.22 0.08;
+	brakelights 1 0.48 0.14 -2.24 0.1;
+
+	frontdimlights	0.59 -0.08 2.20;
+	backdimlights	0.56 0.14 -2.22;
+
+	// position
+	backlights 0.37 0.14 -2.24 0.09;
+
+	engine 0.0 0.4 2.1;
+	exhaust 0.36 -0.24 -1.84 2 1;
+
+	driver -0.35 0.24 -0.0;
+};
+
+useBodyColor 1;
+
+colors
+{
+	//name		r	g	b	reflectivity
+	"Red w/ White Stripes"
+	{
+		1	0.30	0.01	0.01	1.0;	// red
+		2	0.90 	0.90 	0.90	0.6;	// white
+	};
+
+	"Blue w/ White Stripes"
+	{
+		1	0.01	0.01	0.10	1.0;	// blue
+		2	0.90 	0.90 	0.90	0.6;	// white
+	};
+
+	"Green w/ White Stripes"
+	{
+		1	0.06	0.08	0.06	1.0;	// green
+		2	0.90 	0.90 	0.90	0.6;	// white
+	};
+
+	"Black w/ White Stripes"
+	{
+		1	0.05	0.05	0.05	1.0;	// black
+		2	0.90 	0.90 	0.90	0.6;	// white
+	};
+
+	"Gray w/ White Stripes"
+	{
+		1	0.80	0.80	0.80	0.6;	// grey
+		2	0.90 	0.90 	0.90	0.6;	// white
+	};
+};
+
+bodysize	0.88 0.42 2.56;
+center 		0 0.1 0.0;
+
+gravitycenter	0.0 -0.04 0.05;
+mass 		3000;
+antiroll	0.24;
+
+gears
+	-1.85
+	2.0
+	1.2
+	0.79
+	0.59;
+
+
+differential 		25;
+transmissionrate	1.0;
+torquemultipler		0.96;
+
+maxspeed		150;
+
+suspensionLift		0.0;
+	
+wheels
+{
+	// front wheels
+	wheel
+	{
+		SuspensionTop			-0.72 0.05 1.43;
+		SuspensionBottom		-0.84 -0.56 1.47;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2600;
+
+		Radius 			0.32;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	wheel
+	{
+		SuspensionTop			0.72 0.05 1.43;
+		SuspensionBottom		0.84 -0.56 1.47;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2600;
+
+		Radius 			0.32;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	// back wheels
+	wheel
+	{
+		SuspensionTop			0.72 0.05 -1.32;
+		SuspensionBottom		0.84 -0.56 -1.36;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2600;
+
+		Radius 			0.32;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+	
+	wheel
+	{
+		SuspensionTop			-0.72 0.05 -1.32;
+		SuspensionBottom		-0.84 -0.56 -1.36;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2600;
+
+		Radius 			0.32;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+};

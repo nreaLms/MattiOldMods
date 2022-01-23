@@ -1,0 +1,5 @@
+"Skinned"
+{ 
+	"basetexture" "models/chicagoobjs/lposts";
+	cubemap		"$env_cubemap";
+}; 

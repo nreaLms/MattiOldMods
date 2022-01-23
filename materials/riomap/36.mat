@@ -1,0 +1,8 @@
+"Base" 
+{ 
+	"basetexture" "riomap/36";
+	NightLight		"riomap/36_NL";
+	cubemap		"$env_cubemap";
+	alphatest	"1";
+	nocull	"1";
+}; 

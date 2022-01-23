@@ -1,0 +1,8 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/bmechd3";
+	BaseTextureSpecularAlpha 	0;
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.0;
+	nocull		1;
+}; 

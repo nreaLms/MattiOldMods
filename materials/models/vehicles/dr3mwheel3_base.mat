@@ -1,0 +1,8 @@
+"Skinned" 
+{ 
+	BaseTexture "models/vehicles/dr3mwheel3_base"; 
+	BaseTextureSpecularAlpha 	0;
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.0;
+	nocull		1;
+}; 

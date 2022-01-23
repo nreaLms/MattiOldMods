@@ -1,0 +1,6 @@
+BaseUnlit
+{
+	BaseTexture "ui/vehicles/d1_flair500classic"
+	address "clamp";
+	translucent 1;
+}

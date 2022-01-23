@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/d3_bruiser69/splitter69";
+	DamageTexture		"models/vehicles/d3_bruiser69/splitter69_dam";
+	ColorMap			"models/vehicles/d3_bruiser69/splitter69_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.15;
+	nocull		1;
+}; 

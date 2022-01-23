@@ -1,0 +1,6 @@
+BaseUnlit
+{
+	BaseTexture "ui/vehicles/d3_prowler80"
+	address "clamp";
+	translucent 1;
+}

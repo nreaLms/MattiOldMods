@@ -1,0 +1,160 @@
+name		"'67 Ford Mustang Fastback";
+
+cleanmodel		"models/vehicles/fstang67.egf";
+damagedmodel	"models/vehicles/fstang67_dam.egf";
+
+wheelBodyGroup	"wheel2";
+
+sounds
+{
+	engine		"car.engine2";
+	engine_low	"car.engine2_low";
+	engine_idle	"defaultcar.engine_idle";
+
+	horn 		"car.horn4";
+	// use single engine sound
+	//engine_off	"sounds/engines/engine2_off.wav"
+};
+
+camera_height 	1.1;
+camera_distance 5.7;
+
+camera_height_in 	0.26;
+camera_distance_in	1.6;
+camera_side_in		0.39;
+
+visuals
+{
+	// name	type position split dist
+	//headlights 	1 0.57 0.04 2.14 0.13;
+	
+	headlights 	0 0.70 0.04 2.10 0.13;
+	brakelights 	1 0.66 0.07 -2.20 0.08;
+
+	frontdimlights	0.70 -0.20 2.10 0.1;
+	backdimlights	0.74 0.07 -2.20 0.09;
+
+	// position
+	backlights 	0.65 -0.18 -2.18 0.09;
+
+	engine 0.0 0.1 2.2;
+	driver -0.36 0.18 -0.2;
+	
+	exhaust 0.50 -0.25 -2.0 2 1;
+};
+
+hingePoints
+{
+	front 0.0 -0.25 2.25;
+	back 0.0 -0.25 -2.55;
+}
+
+useBodyColor 1;
+
+colors
+{
+	//name		r	g	b	reflectivity
+	"Sandy Brown" 	0.54 	0.48 	0.28	1.0;	// sandybrown
+	"Dark Blue"		0.01	0.02	0.10	1.0;	// blue
+	"Dark Gray"		0.22 	0.22 	0.23	1.0;	// darkgray
+	"Gray"			0.5 	0.5 	0.5		1.0;	// gray
+	"Green"			0.01	0.10	0.02	1.0;	// green
+	"Red"			0.15	0.01	0.01	1.0;	// red
+	
+};
+
+bodysize	0.8 0.55 2.35;
+center 		0 0.12 0.0;
+
+gravitycenter	0.0 -0.04 0.05;
+mass 		2800;
+antiroll	0.24;
+
+gears
+	-1.85
+	2.0
+	1.2
+	0.79
+	0.59;
+
+
+differential 		25.0;
+transmissionrate	1.0;
+torquemultipler		0.9;
+
+maxspeed		164;
+
+suspensionLift		0.01;
+	
+wheels
+{
+	// front wheels
+	wheel
+	{
+		SuspensionTop			-0.69 0.05 1.52;
+		SuspensionBottom		-0.76 -0.68 1.52;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2800;
+
+		Radius 			0.31;
+		Width			0.20;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	wheel
+	{
+		SuspensionTop			0.69 0.05 1.52;
+		SuspensionBottom		0.76 -0.68 1.52;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2800;
+
+		Radius 			0.31;
+		Width			0.20;
+
+		BrakeTorque		12000.0;
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	// back wheels
+	wheel
+	{
+		SuspensionTop			0.69 0.05 -1.26;
+		SuspensionBottom		0.76 -0.68 -1.26;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2800;
+
+		Radius 			0.31;
+		Width			0.20;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+	
+	wheel
+	{
+		SuspensionTop			-0.69 0.05 -1.26;
+		SuspensionBottom		-0.76 -0.68 -1.26;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2800;
+		Radius 			0.31;
+		Width			0.20;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+};

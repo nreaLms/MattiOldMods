@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/psx_flair500/d1flair500classic";
+	DamageTexture		"models/vehicles/psx_flair500/d1flair500classic_dam";
+	ColorMap			"models/vehicles/psx_flair500/d1flair500classic_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.35;
+	nocull		1;
+}; 

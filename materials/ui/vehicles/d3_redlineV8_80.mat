@@ -1,0 +1,6 @@
+BaseUnlit
+{
+	BaseTexture "ui/vehicles/d3_redlineV8_80"
+	address "clamp";
+	translucent 1;
+}

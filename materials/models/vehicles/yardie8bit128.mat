@@ -1,0 +1,10 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/gta3_yardielobo/yardie8bit128";
+	DamageTexture		"models/vehicles/gta3_yardielobo/yardie8bit128_dam";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.0;
+	nocull		0;
+}; 

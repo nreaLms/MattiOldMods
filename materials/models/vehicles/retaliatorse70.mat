@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/drvsyn_retaliatorSE70/retaliatorse70";
+	DamageTexture		"models/vehicles/drvsyn_retaliatorSE70/retaliatorse70_dam";
+	ColorMap			"models/vehicles/drvsyn_retaliatorSE70/retaliatorse70_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.35;
+	nocull		1;
+}; 

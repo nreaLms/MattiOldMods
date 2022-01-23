@@ -1,0 +1,184 @@
+name		"'04 Skyline GT-R";
+
+cleanmodel	"models/vehicles/r34sp.egf";
+damagedmodel	"models/vehicles/r34sp_dam.egf";	// _damage.egf
+
+//		damaged 	hubcapped 	hubcap
+wheelmodel	"models/vehicles/r34japwheel.egf";
+wheelBodyGroup	"gtjapwheel1";
+
+sounds
+{
+	engine		"tokyocar.engine34";
+	engine_low	"tokyocar.engine34_low";
+	engine_idle	"tokyocar.engine34_idle";
+
+	horn 		"car.horn8";
+	// use single engine sound
+	//engine_off	"sounds/engines/engine2_off.wav"
+};
+
+camera_height 	1.4;
+camera_distance 6.0;
+
+camera_height_in 	0.25;
+camera_distance_in	1.5;
+camera_side_in		0.15;
+
+visuals
+{
+	// name	type position split dist
+	headlights 	1 0.52 0.08 1.92 0.10;
+	brakelights 0 0.60 0.28 -2.12 0.1;
+
+	frontdimlights	0.82 0.0 0.82;
+	backdimlights	0.41 0.25 -2.12;
+
+	// position
+	backlights 0.23 -0.02 -2.20 0.0;
+
+	engine 0.0 0.0 1.9;
+	exhaust -0.38 -0.20 -2.12 2;
+
+	driver -0.35 0.06 0.02;
+};
+
+useBodyColor 1;
+
+colors
+{
+	//name		r	g	b	reflectivity
+	default
+	{
+		1	0.32	0.05	0.05	1.0;	// red
+		2	0.05	0.05	0.05	1.0;	// black
+	};
+
+	grey
+	{
+		1	0.04	0.06	0.04	1.0;	// green
+		2	0.05	0.05	0.05	1.0;	// black
+	};
+
+	green
+	{
+		1	0.80	0.80	0.80	0.6;	// grey
+		2	0.05	0.05	0.05	1.0;	// black
+	};
+
+	black
+	{
+		1	0.05	0.05	0.05	1.0;	// black
+		2	0.05	0.05	0.05	1.0;	// black
+	};
+
+	blue
+	{
+		1	0.04	0.04	0.12	1.0;	// blue
+		2	0.05	0.05	0.05	1.0;	// black
+	};
+	
+	orange
+	{
+		1	0.48	0.18	0.02	1.0;	// orange
+		2	0.05	0.05	0.05	1.0;	// black
+	};
+};
+
+bodysize	0.80 0.48 2.35;
+center 		0 0.15 0.0;
+
+gravitycenter	0.0 -0.15 0.1;
+mass 		3000;
+antiroll	0.15;
+
+gears
+	-1.85
+	2.0
+	1.2
+	0.79
+	0.59;
+
+
+differential 		25;
+transmissionrate	1.2;
+torquemultipler		1.16;
+
+maxspeed		170;
+
+suspensionLift		0.1;
+	
+wheels
+{
+	// front wheels
+	wheel
+	{
+		SuspensionTop			-0.74 0.02 1.25;
+		SuspensionBottom		-0.78 -0.72 1.29;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.34;
+		Width			0.22;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	wheel
+	{
+		SuspensionTop			0.74 0.02 1.25;
+		SuspensionBottom		0.78 -0.72 1.29;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.34;
+		Width			0.22;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	// back wheels
+	wheel
+	{
+		SuspensionTop			0.74 0.02 -1.26;
+		SuspensionBottom		0.78 -0.68 -1.30;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.34;
+		Width			0.22;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+	
+	wheel
+	{
+		SuspensionTop			-0.74 0.02 -1.26;
+		SuspensionBottom		-0.78 -0.68 -1.30;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.34;
+		Width			0.22;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+};

@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/d3_classic73/imperial61";
+	DamageTexture		"models/vehicles/d3_classic73/imperial61_dam";
+	ColorMap			"models/vehicles/d3_classic73/imperial61_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.15;
+	nocull		1;
+}; 

@@ -1,0 +1,10 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/d3_polprowler80/stcanis80";
+	DamageTexture		"models/vehicles/d3_polprowler80/stcanis80_dam";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.15;
+	nocull		0;
+}; 

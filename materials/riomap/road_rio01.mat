@@ -1,0 +1,6 @@
+"Base" 
+{ 
+	"basetexture" "riomap/road_rio01";
+	cubemap		"$env_cubemap";
+	rotatable	"1";
+}; 

@@ -1,0 +1,159 @@
+name		"'78 Schutze 400 Classic";
+
+cleanmodel		"models/vehicles/d2_schutze400_82.egf";
+damagedmodel	"models/vehicles/d2_schutze400_82_dam.egf";
+
+wheelmodel	"models/vehicles/d2_wheels.egf";
+wheelBodyGroup	"d2m_rio01";
+
+sounds
+{
+	engine		"rio.engine";
+	engine_low	"rio.engine_low";
+	engine_idle	"arvensis.engine_idle";
+
+	horn 		"car.horn2";
+	// use single engine sound
+	//engine_off	"sounds/engines/engine2_off.wav"
+};
+
+camera_height 	1.0;
+camera_distance 5.7;
+
+camera_height_in 	0.26;
+camera_distance_in	1.6;
+camera_side_in		0.39;
+
+visuals
+{
+	// name	type position split dist
+	//headlights 	1 0.57 0.04 2.14 0.13;
+	
+	headlights 	1 0.56 0.0 1.96 0.08;
+	brakelights 	1 0.46 -0.02 -2.0 0.06;
+
+	frontdimlights	0.44 -0.18 2.06 0.1;
+	backdimlights	0.61 0.02 -2.0 0.09;
+
+	// position
+	backlights 	0.61 -0.02 -2.0 0.09;
+
+	engine 0.0 0.1 2.0;
+	driver -0.30 -0.04 -0.0;
+	
+	exhaust 0.32 -0.28 -2.0 2;
+};
+
+hingePoints
+{
+	front 0.0 -0.25 2.25;
+	back 0.0 -0.25 -2.55;
+}
+
+useBodyColor 1;
+
+colors
+{
+	//name		r	g	b	reflectivity
+	"Red" 		0.54 	0.16 	0.12	1.0;	// sandybrown
+	"Green"		0.28	0.48	0.20	1.0;	// green
+	"Blue"		0.28	0.54	0.64	1.0;	// blue
+	"Gray"		0.5 	0.5 	0.5		1.0;	// gray
+	"Brown" 		0.54 	0.48 	0.28	1.0;	// sandybrown
+};
+
+bodysize	0.6 0.45 2.15;
+center 		0 0.12 0.0;
+
+gravitycenter	0.0 -0.12 0.05;
+mass 		2800;
+antiroll	0.24;
+
+gears
+	-1.85
+	2.0
+	1.2
+	0.79
+	0.59;
+
+
+differential 		25.0;
+transmissionrate	1.0;
+torquemultipler		0.9;
+
+maxspeed		164;
+
+suspensionLift		0.01;
+	
+wheels
+{
+	// front wheels
+	wheel
+	{
+		SuspensionTop			-0.64 0.05 1.26;
+		SuspensionBottom		-0.68 -0.70 1.30;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2800;
+
+		Radius 			0.29;
+		Width			0.20;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	wheel
+	{
+		SuspensionTop			0.64 0.05 1.26;
+		SuspensionBottom		0.68 -0.70 1.30;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2800;
+
+		Radius 			0.29;
+		Width			0.20;
+
+		BrakeTorque		12000.0;
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	// back wheels
+	wheel
+	{
+		SuspensionTop			0.64 0.05 -1.06;
+		SuspensionBottom		0.68 -0.72 -1.10;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2800;
+
+		Radius 			0.29;
+		Width			0.20;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+	
+	wheel
+	{
+		SuspensionTop			-0.64 0.05 -1.06;
+		SuspensionBottom		-0.68 -0.72 -1.10;
+		SuspensionSpringConstant	45000.0;
+		SuspensionDampingConstant	2800;
+		Radius 			0.29;
+		Width			0.20;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+};

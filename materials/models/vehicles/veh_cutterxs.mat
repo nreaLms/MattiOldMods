@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/drvsyn_cutterxs/veh_cutterxs";
+	DamageTexture			"models/vehicles/drvsyn_cutterxs/veh_cutterxs_dam";
+	ColorMap			"models/vehicles/drvsyn_cutterxs/veh_cutterxs_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.75;
+	nocull		1;
+}; 

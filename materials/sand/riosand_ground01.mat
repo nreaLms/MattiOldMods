@@ -1,0 +1,9 @@
+"Base"
+{
+	basetexture	"sand/riosand_ground01";
+	surfaceprops 	"sand"; 
+	cubemap		$env_cubemap;
+	WetScale	0.3;
+	Phong		0.8;
+	Variation	1;
+};
