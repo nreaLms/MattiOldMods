@@ -2,7 +2,7 @@ local ModInit = {
 	Title = "Matti Old Mods",
 
 	CreatedBy = "_matti, Soapy, LivingWithGames",
-	Version = "1.0",
+	Version = "1.1",
 	PreBoot = false,
 
 	Conflicts = {}
