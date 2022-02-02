@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/sabreturbo_lights_glass";
+	DamageTexture		"models/vehicles/sabreturbo_lights_glass_dam";
+	BaseTextureSpecularAlpha 	0;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.15;
+	nocull		1;
+	alphatest	1;
+}; 

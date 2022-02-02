@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/vehicle_generic_detail2";
+	DamageTexture		"models/vehicles/vehicle_generic_detail2_dam";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.35;
+	nocull		1;
+	alphatest	0;
+}; 

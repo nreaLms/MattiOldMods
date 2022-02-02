@@ -10,7 +10,7 @@ local ModInit = {
 
 -- Dependencies : Hallgarth's Wheels
 -- Content : MattiMegaCarPack, MattiD2RioChicagoSmall, Matti_FFStang67, 
--- 			 RetaliatorXS74, SkylineGTR04, Steelhumper(Flip-Car)
+-- 			 RetaliatorXS74, SkylineGTR04, Steelhumper(Flip-Car), Sabre GT (GTA4)
 
 local RioSmall = "riosmall"
 local ChicagoSmall = "chicagosmall"
@@ -45,6 +45,7 @@ local Old_Cars = {
 	{"gtavc_pd83", 				"'83 VC Police"},					-- Somewhat OK
 	{"r34sp", 					"'04 Skyline GT-R"},				-- Somewhat OK
 	{"retaliatorSE72", 			"'72 Retaliator SE"},				-- Somewhat OK
+	{"sabregt70", 				"'70 Sabre GT"},					-- Somewhat OK
 }
 
 -- initialization function

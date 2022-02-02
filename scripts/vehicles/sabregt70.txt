@@ -1,0 +1,184 @@
+name		"'70 Sabre GT";
+
+cleanmodel	"models/vehicles/sabregt70.egf";
+damagedmodel	"models/vehicles/sabregt70_dam.egf";	// _damage.egf
+
+//		damaged 	hubcapped 	hubcap
+wheelmodel	"models/vehicles/wheelmuscle.egf";
+wheelBodyGroup	"wheel2d";
+
+sounds
+{
+	engine		"car.engine2";
+	engine_low	"car.engine2_low";
+	engine_idle	"defaultcar.engine_idle3";
+
+	horn 		"car.horn8";
+	// use single engine sound
+	//engine_off	"sounds/engines/engine2_off.wav"
+};
+
+camera_height 	1.3;
+camera_distance 6.5;
+
+camera_height_in 	0.25;
+camera_distance_in	1.5;
+camera_side_in		0.15;
+
+visuals
+{
+	// name	type position split dist
+	headlights 	1 0.60 0.01 2.0 0.08;
+	brakelights 0 0.50 0.0 -2.36 0.12;
+
+	frontdimlights	0.61 -0.2 2.0;
+	backdimlights	0.58 0.0 -2.36;
+
+	// position
+	backlights 0.49 -0.06 -2.36 0.09;
+
+	engine 0.0 0.0 1.8;
+	exhaust 0.50 -0.24 -2.36 2 1;
+
+	driver -0.35 0.06 0.02;
+};
+
+useBodyColor 1;
+
+colors
+{
+	//name		r	g	b	reflectivity
+	default
+	{
+		1	0.08	0.12	0.08	1.0;	// green
+		2	0.60	0.60	0.60	1.0;	// white
+	};
+
+	grey
+	{
+		1	0.32	0.05	0.05	1.0;	// red
+		2	0.60	0.60	0.60	1.0;	// white
+	};
+
+	green
+	{
+		1	0.50	0.50	0.50	0.6;	// grey
+		2	0.05	0.05	0.05	1.0;	// black
+	};
+
+	black
+	{
+		1	0.05	0.05	0.05	1.0;	// black
+		2	0.60	0.60	0.60	1.0;	// white
+	};
+
+	blue
+	{
+		1	0.08	0.08	0.20	1.0;	// blue
+		2	0.05	0.05	0.05	1.0;	// black
+	};
+	
+	orange
+	{
+		1	0.48	0.18	0.02	1.0;	// orange
+		2	0.05	0.05	0.05	1.0;	// black
+	};
+};
+
+bodysize	0.9 0.64 2.35;
+center 		0 0.06 0.0;
+
+gravitycenter	0.0 -0.1 0.05;
+mass 		3000;
+antiroll	0.14;
+
+gears
+	-1.85
+	2.0
+	1.2
+	0.79
+	0.59;
+
+
+differential 		25;
+transmissionrate	1.0;
+torquemultipler		0.96;
+
+maxspeed		150;
+
+suspensionLift		0.1;
+	
+wheels
+{
+	// front wheels
+	wheel
+	{
+		SuspensionTop			-0.68 0.02 1.30;
+		SuspensionBottom		-0.72 -0.78 1.34;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.32;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	wheel
+	{
+		SuspensionTop			0.68 0.02 1.30;
+		SuspensionBottom		0.72 -0.78 1.34;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.32;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	// back wheels
+	wheel
+	{
+		SuspensionTop			0.68 0.02 -1.26;
+		SuspensionBottom		0.72 -0.74 -1.30;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.32;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+	
+	wheel
+	{
+		SuspensionTop			-0.68 0.02 -1.26;
+		SuspensionBottom		-0.72 -0.74 -1.30;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	3000;
+
+		Radius 			0.32;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+};
