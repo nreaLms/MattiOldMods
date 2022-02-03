@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/toronado72";
+	DamageTexture		"models/vehicles/toronado72_dam";
+	ColorMap			"models/vehicles/toronado72_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.35;
+	nocull		1;
+}; 

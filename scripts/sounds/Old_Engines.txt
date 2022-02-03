@@ -173,3 +173,359 @@
 	maxdistance	150;
 	channel		CHAN_SIGNAL;
 };
+
+//----------------------------------------------------
+
+"skylark.high"
+{
+	wave 	"engines/skylark_high.wav";
+
+	volume		1.5;
+	pitch		0.72;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"skylark.low"
+{
+	wave 	"engines/skylark_low.wav";
+
+	volume		0.9;
+	pitch		0.72;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"skylark.idle"
+{
+	wave 	"engines/skylark_idle.wav";
+
+	volume		1.5;
+	pitch		1.0;
+	distance	3.0;
+	channel		"CHAN_ITEM";
+};
+
+"skylark.horn"
+{
+	wave 	"engines/skylark_horn.wav";
+
+	volume		0.9;
+	distance	4.0;
+	channel		CHAN_SIGNAL;
+};
+
+//----------------------------------------------------
+
+"challenger71.high"
+{
+	wave 	"engines/challenger71_high.wav";
+	pitch		0.72;
+	volume		2.0;
+	distance	5.0;
+	channel		"CHAN_ITEM";
+};
+
+"challenger71.low"
+{
+	wave 	"engines/challenger71_high.wav";
+	pitch		0.72;
+	volume		1.5;
+	"distance"	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"challenger71.idle"
+{
+	wave 	"engines/challenger71_idle.wav";
+
+	"volume"	2.0;
+	"distance"	2.0;
+	channel		"CHAN_ITEM";
+};
+
+"challenger71.horn"
+{
+	wave 	"engines/challenger71_horn.wav";
+	pitch		1.0;
+	volume		2.0;
+	"distance"	4.5;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"442.high"
+{
+	wave 	"engines/442_high.wav";
+	volume		2.0;
+	pitch		0.72;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"442.low"
+{
+	wave 	"engines/442_high.wav";
+	volume		1.5;
+	pitch		0.72;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"442.idle"
+{
+	wave 	"engines/442_idle.wav";
+
+	"volume"	2.0;
+	"distance"	2.0;
+	channel		"CHAN_ITEM";
+};
+
+"442.horn"
+{
+	wave 	"engines/442_horn.wav";
+	pitch		1.0;
+	volume		2.0;
+	"distance"	4.5;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"tbird64.high"
+{
+	wave 	"engines/tbird64_high.wav";
+	volume		2.0;
+	pitch		0.72;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"tbird64.low"
+{
+	wave 	"engines/tbird64_high.wav";
+	volume		1.5;
+	pitch		0.72;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"tbird64.idle"
+{
+	wave 	"engines/tbird64_idle.wav";
+
+	"volume"	2.0;
+	"distance"	2.0;
+	channel		"CHAN_ITEM";
+};
+
+"tbird64.horn"
+{
+	wave 	"engines/tbird64_horn.wav";
+	pitch		1.0;
+	volume		2.0;
+	"distance"	4.5;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"monarch76.high"
+{
+	wave 	"engines/monarch76_high.wav";
+	volume		2.0;
+	pitch		0.72;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"monarch76.low"
+{
+	wave 	"engines/monarch76_high.wav";
+	volume		1.5;
+	pitch		0.72;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"monarch76.idle"
+{
+	wave 	"engines/monarch76_idle.wav";
+
+	"volume"	2.0;
+	"distance"	2.0;
+	channel		"CHAN_ITEM";
+};
+
+"monarch76.horn"
+{
+	wave 	"engines/monarch76_horn.wav";
+	pitch		1.0;
+	volume		2.0;
+	"distance"	4.5;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"lesabre75.high"
+{
+	wave 	"engines/lesabre75_high.wav";
+	volume		2.0;
+	pitch		0.72;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"lesabre75.low"
+{
+	wave 	"engines/lesabre75_high.wav";
+	volume		1.5;
+	pitch		0.72;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"lesabre75.idle"
+{
+	wave 	"engines/lesabre75_idle.wav";
+
+	"volume"	2.0;
+	"distance"	2.0;
+	channel		"CHAN_ITEM";
+};
+
+"lesabre75.horn"
+{
+	wave 	"engines/lesabre75_horn.wav";
+	pitch		1.0;
+	volume		2.0;
+	"distance"	4.5;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"kingsway57.high"
+{
+	wave 	"engines/kingsway57_high.wav";
+	volume		2.0;
+	pitch		0.72;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"kingsway57.low"
+{
+	wave 	"engines/kingsway57_high.wav";
+	volume		1.5;
+	pitch		0.72;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"kingsway57.idle"
+{
+	wave 	"engines/kingsway57_idle.wav";
+
+	"volume"	2.0;
+	"distance"	2.0;
+	channel		"CHAN_ITEM";
+};
+
+"kingsway57.horn"
+{
+	wave 	"engines/kingsway57_horn.wav";
+	pitch		1.0;
+	volume		2.0;
+	"distance"	4.5;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"regis79.high"
+{
+	wave 	"engines/regis79_high.wav";
+	volume		2.0;
+	pitch		0.72;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"regis79.low"
+{
+	wave 	"engines/regis79_high.wav";
+	volume		1.5;
+	pitch		0.72;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"regis79.idle"
+{
+	wave 	"engines/regis79_idle.wav";
+
+	"volume"	2.0;
+	"distance"	2.0;
+	channel		"CHAN_ITEM";
+};
+
+"regis79.horn"
+{
+	wave 	"engines/regis79_horn.wav";
+	pitch		1.0;
+	volume		2.0;
+	"distance"	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"regis79.siren"
+{
+	wave 	"engines/regis79_siren.wav";
+
+	"volume"	2.0;
+	"distance"	2.0;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------
+
+"gsx.high"
+{
+	wave 	"engines/gsx_high.wav";
+	volume		2.0;
+	pitch		0.72;
+	distance	4.5;
+	channel		"CHAN_ITEM";
+};
+
+"gsx.low"
+{
+	wave 	"engines/gsx_high.wav";
+	volume		1.5;
+	pitch		0.72;
+	distance	3.8;
+	channel		"CHAN_ITEM";
+};
+
+"gsx.idle"
+{
+	wave 	"engines/gsx_idle.wav";
+
+	"volume"	2.0;
+	"distance"	2.0;
+	channel		"CHAN_ITEM";
+};
+
+"gsx.horn"
+{
+	wave 	"engines/gsx_horn.wav";
+	pitch		1.0;
+	volume		2.0;
+	"distance"	4.5;
+	channel		"CHAN_ITEM";
+};
+
+//----------------------------------------------------

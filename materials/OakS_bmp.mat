@@ -1,0 +1,10 @@
+"Base" 
+{ 
+	basetexture 			"simpsonstr1/OakS_bmp";
+	//NightLight				"simpsonstr1/asphalt_norm_bmp_L";
+	Cubemap				"$env_cubemap";
+	BaseTextureSpecularAlpha 	0;
+	SpecularScale			0.3;
+	alphatest 1;
+	nocull	1;
+};

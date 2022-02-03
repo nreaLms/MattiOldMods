@@ -1,0 +1,210 @@
+name		"'72 Skylark - PC";
+
+cleanmodel	"models/vehicles/skylark72pc.egf";
+damagedmodel	"models/vehicles/skylark72pc_dam.egf";
+wheelmodel	"models/vehicles/wheelmuscle.egf";
+
+wheelBodyGroup	"wheel2g";
+
+sounds
+{
+	engine		"skylark.high";
+	engine_low	"skylark.low";
+	engine_idle	"skylark.idle";
+
+	horn 		"skylark.horn";
+	// use single engine sound
+	//engine_off	"sounds/engines/engine2_off.wav"
+};
+
+camera_height 	1.4;
+camera_distance 6.6;
+
+camera_height_in 	0.25;
+camera_distance_in	1.5;
+camera_side_in		0.15;
+
+visuals
+{
+	// name	type position split dist
+	headlights 	1 0.64 0.12 2.28 0.06;
+	brakelights 	1 0.60 0.16 -2.34 0.08;
+
+	frontdimlights	0.68 -0.16 2.32 0.1;
+	backdimlights	0.68 0.16 -2.34 0.06;
+
+	// position
+	backlights 0.24 0.054 -2.38 0.09;
+
+	engine 0.0 0.1 2.15;
+	exhaust 0.35 -0.20 -2.18 2;
+
+	driver -0.40 0.1 -0.1;
+};
+
+hingePoints
+{
+	front 0.0 -0.25 2.25;
+	back 0.0 -0.25 -2.20;
+}
+
+useBodyColor 1;
+
+colors
+{
+	//name		r	g	b	reflectivity
+	
+	"Black" 	0.02 	0.02 	0.02	1.0;
+	
+	"Black with White Stripes"
+	{
+		1	0.02 	0.02 	0.02	1.0;	// black
+		2	0.65 	0.65 	0.65	1.0;	// white
+	};
+
+	"White"		0.65 	0.65 	0.65	1.0;
+
+	"White with Black Stripes"
+	{
+		1	0.65 	0.65 	0.65	1.0;	// white
+		2	0.02 	0.02 	0.02	1.0;	// black
+	};
+
+	"Dark Blue"	0.04 	0.04 	0.18	1.0;	// dark blue
+
+	"Dark Blue with Black Stripes"
+	{
+		1	0.04 	0.04 	0.18	1.0;	// dark blue
+		2	0.65 	0.65 	0.65	1.0;	// white
+	};
+
+	"Yellow"	0.65	0.44	0.15	1.0;
+
+	"Yellow with Black Stripes"
+	{
+		1	0.65	0.44	0.15	1.0;	// yellow
+		2	0.02 	0.02 	0.02	1.0;	// black
+	};
+
+	"Black with Yellow Stripes"
+	{
+		1	0.02 	0.02 	0.02	1.0;	// black
+		2	0.65	0.44	0.15	1.0;	// yellow
+	};
+
+	"Red"		0.36	0.04	0.02	1.0;	// red
+
+	"Red with White Stripes"	
+	{
+		1	0.36	0.04	0.02	1.0;	// red
+		2	0.65 	0.65 	0.65	1.0;	// white
+	};
+
+	"Red with Yellow Stripes"	
+	{
+		1	0.36	0.04	0.02	1.0;	// red
+		2	0.65	0.44	0.15	1.0;	// yellow
+	};
+
+};
+
+bodysize	0.80 0.48 2.35;
+center 		0 0.15 0.0;
+
+gravitycenter	0.0 -0.15 0.1;
+mass 		2800;
+antiroll	0.15;
+
+gears
+	-1.85
+	1.615
+	1.019
+	0.705
+	0.570;
+
+
+differential 		26.0;
+transmissionrate	1.079;
+torquemultipler		1.0;
+
+maxspeed		150;
+
+suspensionLift		0.0;
+	
+wheels
+{
+	// front wheels
+	wheel
+	{
+		SuspensionTop			-0.64 0.02 1.32;
+		SuspensionBottom		-0.78 -0.54 1.30;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	2800;
+
+		Radius 			0.315;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	wheel
+	{
+		SuspensionTop			0.64 0.02 1.32;
+		SuspensionBottom		0.78 -0.54 1.30;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	2800;
+
+
+		Radius 			0.315;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			1;
+		Drive			0;
+		Handbrake		0;
+	};
+
+	// back wheels
+	wheel
+	{
+		SuspensionTop			0.64 0.02 -1.26;
+		SuspensionBottom		0.74 -0.54 -1.20;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	2800;
+
+
+		Radius 			0.315;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+	
+	wheel
+	{
+		SuspensionTop			-0.64 0.02 -1.26;
+		SuspensionBottom		-0.74 -0.54 -1.20;
+		SuspensionSpringConstant	55000.0;
+		SuspensionDampingConstant	2800;
+
+
+		Radius 			0.315;
+		Width			0.23;
+
+		BrakeTorque		12000.0;
+
+		Steer			0;
+		Drive			1;
+		Handbrake		1;
+	};
+
+};

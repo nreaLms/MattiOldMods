@@ -1,0 +1,11 @@
+"DrvSynVehicle"
+{ 
+	BaseTexture			"models/vehicles/skylark72pc";
+	DamageTexture			"models/vehicles/skylark72pc_dam";
+	//ColorMap			"models/vehicles/pskylark_col";
+	BaseTextureSpecularAlpha 	1;
+
+	CubeMap		"$env_cubemap";
+	SpecularScale	0.35;
+	nocull		1;
+}; 
